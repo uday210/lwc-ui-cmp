@@ -1,0 +1,20 @@
+<template>
+    <table class="mui-table">
+        <thead>
+            <tr>
+                <template for:each={headers} for:item="eachheader">
+                    <th key={eachheader.label}>{eachheader.label}</th>
+                </template>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={tableData} for:item="eachRow">
+                <tr key={eachRow.id}>
+                    <template for:each={eachRow} for:item="eachCell">
+                        <td key={eachCell}>{eachCell}</td>
+                    </template>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>

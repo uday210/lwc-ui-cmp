@@ -1,0 +1,15 @@
+.mui-container-fluid {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mui-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.mui-col-md-1 {
+    width: 8.33333%;
+}

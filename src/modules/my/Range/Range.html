@@ -1,0 +1,17 @@
+<template>
+    <div class="vertically-stacked-slider">
+        <slot name="label"></slot>
+        <div id="textbox">
+            <p class="alignleft">{minValue}</p>
+            <p class="alignright">{maxValue}.</p>
+        </div>
+        <input
+            type="range"
+            value={currentvalue}
+            min={minValue}
+            max={maxValue}
+            step={step}
+            onchange={valueChanged}
+        />
+    </div>
+</template>

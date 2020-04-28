@@ -1,0 +1,18 @@
+<template>
+    <ul class="mui-tabs__bar">
+        <template for:each={tabsclone} for:item="item">
+            <li class={item.classname} key={item.id}>
+                <a
+                    data-mui-toggle="tab"
+                    data-mui-controls="pane-default-1"
+                    data-tabid={item.id}
+                    onclick={tabClicked}
+                    >{item.name}</a
+                >
+            </li>
+        </template>
+
+        <!-- <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2">Tab-2</a></li>
+        <li><a data-mui-toggle="tab" data-mui-controls="pane-default-3">Tab-3</a></li-->
+    </ul>
+</template>

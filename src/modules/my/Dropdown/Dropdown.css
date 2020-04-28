@@ -1,0 +1,111 @@
+.mui-dropdown {
+    display: inline-block;
+    position: relative;
+}
+.mui-btn[data-mui-toggle='dropdown'] {
+    animation-duration: 0.0001s;
+    animation-name: mui-btn-inserted, mui-dropdown-inserted;
+}
+[data-mui-toggle='dropdown'] {
+    outline: 0;
+}
+.mui-btn--primary {
+    color: #fff;
+    background-color: #2196f3;
+}
+.mui-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #fff;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    height: 36px;
+    padding: 0 26px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    background-image: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    position: relative;
+    overflow: hidden;
+}
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+.mui-caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 0 0 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.mui-btn__ripple-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+.mui-btn--primary .mui-ripple {
+    background-color: #fff;
+}
+
+.mui-dropdown__menu {
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 2px;
+    z-index: 1;
+    background-clip: padding-box;
+}
+
+.mui-dropdown__menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.429;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    white-space: nowrap;
+}
+a {
+    color: #2196f3;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}

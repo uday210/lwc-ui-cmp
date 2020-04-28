@@ -1,0 +1,30 @@
+<template>
+    <div
+        id="modal1"
+        class="modal open"
+        tabindex="0"
+        style="
+            z-index: 1003;
+            display: block;
+            opacity: 1;
+            top: 10%;
+            transform: scaleX(1) scaleY(1);
+        "
+    >
+        <div class="modal-content">
+            <h4>
+                <slot name="header">Default content</slot>
+            </h4>
+            <p>
+                <slot name="body">Default body</slot>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <slot name="footer">Default footer</slot>
+        </div>
+    </div>
+    <div
+        class="modal-overlay"
+        style="z-index: 1002; display: block; opacity: 0.5;"
+    ></div>
+</template>

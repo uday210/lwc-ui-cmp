@@ -1,0 +1,20 @@
+<template>
+    <template if:true={showloader}>
+        <div
+            class="MuiBackdrop-root jss1826"
+            aria-hidden="true"
+            style="
+                opacity: 1;
+                transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            "
+        >
+            <div
+                class="MuiCircularProgress-root MuiCircularProgress-indeterminate"
+                role="progressbar"
+                style="width: 40px; height: 40px;"
+            >
+                <div class="loader"></div>
+            </div>
+        </div>
+    </template>
+</template>

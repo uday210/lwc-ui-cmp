@@ -1,0 +1,217 @@
+<template>
+    <my-appbar>
+        <h2>Material like UI components for LWC</h2>
+    </my-appbar>
+    <br />
+    <my-panel>
+        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum
+        </p>
+    </my-panel>
+
+    <my-panel>
+        Content 1
+        <my-divider></my-divider>
+        Content 2
+        <my-divider></my-divider>
+        Content 3
+        <my-divider></my-divider>
+        Content 4
+        <my-divider></my-divider>
+        Content 5
+    </my-panel>
+
+    <!--<my-panel>
+    
+    <my-form>
+        <legend>Title</legend>
+        <div class="mui-textfield">
+          <input type="text" placeholder="Input 1">
+        </div>
+    </my-form>
+    </my-panel>-->
+    <my-panel>
+        <my-buttonui
+            name="Button"
+            onbuttonclick={buttonClicked}
+            variant=""
+        ></my-buttonui>
+        &nbsp;
+        <my-buttonui
+            name="Primary Button"
+            onbuttonclick={buttonClicked}
+            variant="primary"
+        ></my-buttonui>
+        &nbsp;
+        <my-buttonui
+            name="Danger Button"
+            onbuttonclick={buttonClicked}
+            variant="danger"
+        ></my-buttonui>
+        &nbsp;
+        <my-buttonui
+            name="accent Button"
+            onbuttonclick={buttonClicked}
+            variant="accent"
+        ></my-buttonui>
+        &nbsp;
+    </my-panel>
+
+    <my-panel>
+        <my-tabs tabs={tabs} ontabchange={tabchanged}></my-tabs>
+    </my-panel>
+
+    <my-panel>
+        <my-table headers={headers} data={data}></my-table>
+    </my-panel>
+
+    <my-panel>
+        <my-overlay render-overlay={overlay}></my-overlay>
+        <my-buttonui
+            name="start overlay"
+            onbuttonclick={startOverlay}
+            variant="primary"
+        ></my-buttonui>
+        <label
+            >Once the overlay is started its going to close after 5 seconds
+            automatically (just for this demo)</label
+        >
+    </my-panel>
+
+    <my-panel>
+        <my-alert message="This is error" severity="error"></my-alert>
+        <br />
+        <my-alert
+            message="This is error with close action"
+            severity="error"
+            isclosable="true"
+        ></my-alert>
+        <br />
+        <my-alert message="This is warning" severity="warning"></my-alert>
+        <br />
+        <my-alert message="This is info" severity="info"></my-alert>
+        <br />
+        <my-alert message="This is success" severity="success"></my-alert>
+    </my-panel>
+
+    <my-panel>
+        <my-path
+            steps={steps}
+            defaultactivestep="VF Components"
+            onstepchanged={stepchanged}
+        ></my-path>
+    </my-panel>
+
+    <my-panel>
+        <my-buttonui
+            name="start loader"
+            onbuttonclick={startLoader}
+            variant="primary"
+        ></my-buttonui>
+        <label
+            >Once the loader is started its going to close after 5 seconds
+            automatically (just for this demo)</label
+        >
+        <my-loader showloader={loader}></my-loader>
+    </my-panel>
+
+    <my-panel>
+        <my-linear></my-linear>
+    </my-panel>
+
+    <my-panel>
+        <my-icon iconname="arrowleft"></my-icon>
+        <br />
+        <my-icon iconname="arrowright"></my-icon>
+        <br />
+        <my-icon iconname="check"></my-icon>
+
+        <br />
+    </my-panel>
+
+    <my-panel>
+        This is to show the behaviour of tool tip
+        <my-tooltip message="this is going to display in the tooltip"
+            >hover on this</my-tooltip
+        >
+    </my-panel>
+
+    <my-panel>
+        <my-buttonui
+            name="Open Modal"
+            onbuttonclick={openModal}
+            variant="primary"
+        ></my-buttonui>
+        <template if:true={showModal}>
+            <my-modal>
+                <div slot="header">Hello Popup</div>
+                <div slot="body">
+                    You may want to render a component with more than one look
+                    and feel, but not want to mix the HTML in one file. For
+                    example, one version of the component is plain, and another
+                    version displays an image and extra text. In this case, you
+                    can import multiple HTML templates and write business logic
+                    that renders them conditionally. This pattern is similar to
+                    the code splitting used in some JavaScript frameworks.
+                </div>
+                <div slot="footer">
+                    <my-buttonui
+                        name="Close"
+                        onbuttonclick={closeModal}
+                        variant="danger"
+                    ></my-buttonui>
+                    &nbsp;
+                    <my-buttonui
+                        name="OK"
+                        onbuttonclick={closeModal}
+                        variant="primary"
+                    ></my-buttonui>
+                </div>
+            </my-modal>
+        </template>
+    </my-panel>
+
+    <my-panel>
+        <my-datepicker></my-datepicker>
+    </my-panel>
+
+    <my-panel>
+        <span>scale value is : {scalevalue}</span>
+        <my-range
+            value-is={scalevalue}
+            step="1"
+            min-value="1"
+            max-value="99"
+            onscalechange={scalechanged}
+        ></my-range>
+    </my-panel>
+
+    <my-panel>
+        <my-badge></my-badge>
+        <my-badge badgevalue="20">Notifications</my-badge>
+        <my-badge badgevalue="6"
+            ><my-icon iconname="check"></my-icon
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</my-badge
+        >
+        <my-badge badgevalue="55"
+            ><my-buttonui name="OK" variant="primary"></my-buttonui>
+        </my-badge>
+    </my-panel>
+</template>

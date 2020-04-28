@@ -1,0 +1,21 @@
+<template>
+    <div tabindex="0" class="mui-select">
+        <select name="input" tabindex="-1" onclick={fieldClicked}>
+            <option value="option1" class="">Option 1</option>
+            <option value="option2" class="" selected="">Option 2</option>
+            <option value="option3" class="">Option 3</option>
+            <option value="option4" class="">Option 4</option>
+        </select>
+        <label tabindex="-1"></label>
+        <template if:true={isFieldClicked}>
+            <div class="mui-select__menu" style="height: 184px; top: 0px;">
+                <div class="" onclick={optionSelected}>Option 1</div>
+                <div class="" onclick={optionSelected}>Option 2</div>
+                <div class="mui--is-selected" onclick={optionSelected}>
+                    Option 3
+                </div>
+                <div class="" onclick={optionSelected}>Option 4</div>
+            </div>
+        </template>
+    </div>
+</template>

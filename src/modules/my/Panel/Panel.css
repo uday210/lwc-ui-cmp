@@ -1,0 +1,9 @@
+.mui-panel {
+    padding: 15px;
+    margin-bottom: 1.25rem;
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
+        0 0 2px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}

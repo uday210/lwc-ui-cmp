@@ -1,0 +1,52 @@
+.mui-tabs__bar {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.mui-tabs__bar > li.mui--is-active {
+    border-bottom: 2px solid #2196f3;
+}
+.mui-tabs__bar > li {
+    display: inline-block;
+    cursor: pointer;
+}
+li {
+    cursor: pointer;
+}
+.mui-tabs__bar > li.mui--is-active > a {
+    color: #2196f3;
+}
+.mui-tabs__bar > li > a {
+    display: block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: default;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[data-mui-toggle='tab'] {
+    animation-duration: 0.0001s;
+    animation-name: mui-tab-inserted;
+}
+a {
+    color: #2196f3;
+    text-decoration: none;
+}

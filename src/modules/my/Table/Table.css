@@ -1,0 +1,66 @@
+.mui-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+    border-color: grey;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.mui-table > thead > tr > th {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    font-weight: 700;
+}
+.mui-table > thead > tr > th,
+.mui-table > thead > tr > td,
+.mui-table > tbody > tr > th,
+.mui-table > tbody > tr > td,
+.mui-table > tfoot > tr > th,
+.mui-table > tfoot > tr > td {
+    padding: 10px;
+    line-height: 1.429;
+}
+.mui-table > thead > tr > th,
+.mui-table > tbody > tr > th,
+.mui-table > tfoot > tr > th {
+    text-align: left;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.mui-table > thead > tr > th,
+.mui-table > thead > tr > td,
+.mui-table > tbody > tr > th,
+.mui-table > tbody > tr > td,
+.mui-table > tfoot > tr > th,
+.mui-table > tfoot > tr > td {
+    padding: 10px;
+    line-height: 1.429;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
