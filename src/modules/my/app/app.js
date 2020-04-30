@@ -23,15 +23,15 @@ export default class App extends LightningElement {
     }
     startOverlay() {
         this.overlay = true;
-      //  setTimeout(() => {
-       //     this.overlay = false;
-       // }, 5000);
+        setTimeout(() => {
+            this.overlay = false;
+        }, 5000);
     }
     startLoader() {
         this.loader = true;
-      //  setTimeout(() => {
-       //     this.loader = false;
-       // }, 5000);
+        setTimeout(() => {
+            this.loader = false;
+        }, 5000);
     }
 
     tabs = [
@@ -103,16 +103,16 @@ export default class App extends LightningElement {
         }
     ];
     doClick() {
-        console.log('do Click');
+       // alert('do Click');
     }
 
     buttonClicked() {
-        console.log('Button clicked');
+       // alert('Button clicked');
     }
     tabchanged(event) {
-        console.log('current Tab : ' + event.detail);
+      //  alert('current Tab : ' + event.detail);
     }
     stepchanged = (event) => {
-        console.log('current Step : ' + event.detail);
+    //    alert('current Step : ' + event.detail);
     };
 }
